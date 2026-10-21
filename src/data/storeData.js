@@ -1,0 +1,190 @@
+export const STORE_INFO = {
+  name: "فروشگاه نظیف",
+  nameEn: "Froshgah Nazif",
+  subtitle: "تولیدی گند افغانی و لباس‌های اصیل محلی",
+  subtitleEn: "Afghan Traditional Couture & Custom Gand Afghani",
+  instagramHandle: "froshgahnazef",
+  instagramUrl: "https://www.instagram.com/froshgahnazef/",
+  phone: "+93 78 000 0000",
+  whatsapp: "+93 78 000 0000",
+  email: "froshgahnazef@gmail.com",
+  location: "کابل، افغانستان / ارسال به سراسر جهان",
+  locationEn: "Kabul, Afghanistan / Worldwide Express Delivery",
+  bio: "فروشگاه تولیدی نظیف سفارش هر نوع گند افغانی و لباس های محلی افغانستان را پذیرفته و با بهترین دیزاین ها در خدمت تان میباشد.",
+  bioEn: "Nazif Couture accepts custom tailoring orders for all authentic Afghan Gand and traditional Afghan heritage clothing with exquisite designs and premium craftsmanship.",
+  stats: {
+    followers: "140+",
+    ordersCount: "500+",
+    satisfiedClients: "99%",
+    experienceYears: "10+"
+  }
+};
+
+export const CATEGORIES = [
+  { id: "all", name: "همه محصولات", nameEn: "All Products" },
+  { id: "gand", name: "گند افغانی مجلسی", nameEn: "Royal Gand Afghani" },
+  { id: "bridal", name: "لباس عروس و حنا", nameEn: "Bridal & Henna Sets" },
+  { id: "men", name: "لباس و واسکت مردانه", nameEn: "Men's Traditional Wear" },
+  { id: "kids", name: "لباس سنتی بچگانه", nameEn: "Kids & Teens" },
+  { id: "jewelry", name: "زیورآلات و شال", nameEn: "Jewelry & Shawls" }
+];
+
+export const PRODUCTS = [
+  {
+    id: "gand-1",
+    title: "گند افغانی زرین شاهی (کالکشن اختصاصی)",
+    titleEn: "Royal Imperial Golden Gand Afghani",
+    category: "gand",
+    priceAfn: 14500,
+    priceUsd: 210,
+    rating: 5.0,
+    reviewsCount: 38,
+    isFeatured: true,
+    badge: "پست منتخب اینستاگرام",
+    badgeEn: "Instagram Featured",
+    image: "/assets/images/product_featured.jpg",
+    gallery: [
+      "/assets/images/product_featured.jpg",
+      "/assets/images/logo.jpg"
+    ],
+    fabric: "مخمل درجه یک زرشکی و حریر ابریشم خالص",
+    fabricEn: "Premium Crimson Velvet & Pure Silk Chiffon",
+    workmanship: "چرمه‌دوزی، تاردوزی زرین، آیینه‌دوزی دست‌ساز و سکه‌های کهن",
+    workmanshipEn: "Authentic Charma-dozi embroidery, handcrafted mirror work & antique Afghan coins",
+    description: "شاهکاری بی‌نظیر از دستان هنرمندان تولیدی نظیف. این گند افغانی سلطنتی با برش کلاسیک، دامن کلوش پرچین و تزئینات دست‌دوز ظریف، جلوه‌ای خیره‌کننده به شما در جشن‌ها و مراسم عروسی می‌بخشد.",
+    descriptionEn: "A magnificent masterpiece from Froshgah Nazif. Crafted with rich pleated flairs, traditional mirror work and fine gold tilla thread embroidery for weddings and cultural ceremonies.",
+    includes: ["پیراهن بلند سنتی پرچین", "تنبان (شلوار سنتی سوزن‌دوزی شده)", "چادر بزرگ حریر با دوردوزی طلاکاری"],
+    includesEn: ["Heavy Pleated Long Gown", "Embroidered Traditional Pants", "Full-length Silk Chiffon Veil with Gold Trims"]
+  },
+  {
+    id: "bridal-1",
+    title: "لباس عروس سنتی زمرد کابل",
+    titleEn: "Emerald Kabul Traditional Bridal Attire",
+    category: "bridal",
+    priceAfn: 19800,
+    priceUsd: 285,
+    rating: 4.9,
+    reviewsCount: 24,
+    isFeatured: true,
+    badge: "مخصوص عروس و نامزدی",
+    badgeEn: "Bridal Special",
+    image: "/assets/images/product_featured.jpg",
+    fabric: "مخمل اعلا زمردی تیره همراه با آستر ساتن رویال",
+    fabricEn: "Emerald Velvet with Royal Satin Lining",
+    workmanship: "گل‌دوزی مروارید، زردوزی دست‌ساز و یراق‌های باستانی",
+    workmanshipEn: "Pearl embroidery, hand zari wiring & heritage trimmings",
+    description: "انتخابی باشکوه برای شب حنا و عروسی سنتی افغانی. ترکیب رنگ سبز زمردی با گلدوزی‌های درخشان زرین، نماد شگون، اصالت و زیبایی ابدی است.",
+    descriptionEn: "The crowning choice for traditional Afghan Henna and Wedding nights. Rich emerald green paired with shining gold threads representing nobility and heritage.",
+    includes: ["لباس کامل گند عروس", "چادر سلطنتی سرمه‌دوزی شده", "کمربند تزیینی سنتی"],
+    includesEn: ["Bridal Gand Dress", "Hand-embroidered Royal Chador", "Traditional Velvet Waist Belt"]
+  },
+  {
+    id: "gand-2",
+    title: "گند افغانی لعل بدخشان با سکه‌دوزی",
+    titleEn: "Badakhshan Ruby Gand with Heritage Coins",
+    category: "gand",
+    priceAfn: 13200,
+    priceUsd: 190,
+    rating: 4.8,
+    reviewsCount: 19,
+    badge: "طرح پرطرفدار",
+    badgeEn: "Popular Choice",
+    image: "/assets/images/product_featured.jpg",
+    fabric: "پارچه دست‌باف سنتی و مخمل درجه یک",
+    fabricEn: "Authentic Handwoven Fabric & Premium Velvet",
+    workmanship: "سکه‌دوزی دست‌ساز کابل، آیینه‌های دایره‌ای سنتی",
+    workmanshipEn: "Artisan coin stitchwork & antique mirror embellishments",
+    description: "نمایانگر اصالت مناطق کوهستانی و فرهنگ پربار افغانستان. دوخت این لباس با دقت میلی‌متری انجام گرفته تا تن‌خوری شیک و راحت داشته باشد.",
+    descriptionEn: "Reflecting the deep roots of northern Afghan artistry with antique coin details and sweeping pleated silhouette.",
+    includes: ["پیراهن سنتی سکه‌دوزی", "شلوار هماهنگ با حاشیه‌دوزی", "شال سنتی"],
+    includesEn: ["Coin-embellished Gown", "Coordinated Trousers", "Traditional Scarf"]
+  },
+  {
+    id: "men-1",
+    title: "ست پیرهن تنبان سنتی با واسکت زرین",
+    titleEn: "Men's Luxury Pirahan Tunban & Embroidered Waistcoat",
+    category: "men",
+    priceAfn: 8500,
+    priceUsd: 125,
+    rating: 4.9,
+    reviewsCount: 31,
+    badge: "مخصوص آقایان و داماد",
+    badgeEn: "Men's Cultural Wear",
+    image: "/assets/images/logo.jpg",
+    fabric: "کتان اعلا ابریشمی + مخمل ترک برای واسکت",
+    fabricEn: "Silk-cotton blend tunban + Turkish velvet vest",
+    workmanship: "خامک‌دوزی دست‌ساز روی یقه و سرآستین، زرکوب واسکت",
+    workmanshipEn: "Intricate Khamak neck embroidery & gold tilla waistcoat stitches",
+    description: "لباس اصیل مردانه افغانی برای دامادها، مهمانی‌های رسمی و ایام عید. واسکت مخمل با دوخت طلایی که وقار و پرستیژ خاصی به ظاهر شما می‌بخشد.",
+    descriptionEn: "Classic Afghan gentleman's formal attire featuring a refined waistcoat and fine needlework collar for eid, weddings, and cultural celebrations.",
+    includes: ["پیرهن تنبان اعلا", "واسکت مخمل سنتی زرین", "دستمال جیب هماهنگ"],
+    includesEn: ["Pirahan Tunban Tunic & Pants", "Golden Embroidered Waistcoat", "Matching Pocket Scarf"]
+  },
+  {
+    id: "kids-1",
+    title: "لباس سنتی گند دخترانه (شاهزاده کوچک)",
+    titleEn: "Little Princess Handcrafted Girls Gand",
+    category: "kids",
+    priceAfn: 6900,
+    priceUsd: 99,
+    rating: 5.0,
+    reviewsCount: 16,
+    badge: "طراحی ویژه کودکان",
+    badgeEn: "Kids Collection",
+    image: "/assets/images/product_featured.jpg",
+    fabric: "حریر نرم و سبک، بدون ایجاد حساسیت پوست",
+    fabricEn: "Ultra-soft hypoallergenic silk chiffon & lightweight velvet",
+    workmanship: "سوزن‌دوزی ملایم، زنگوله‌دوزی سبک سنتی",
+    workmanshipEn: "Lightweight embroidery & miniature decorative bells",
+    description: "طراحی شاد و اصیل مخصوص دختران تا سن ۱۲ سالگی. وزن سبک و جنس لطیف به کودک امکان حرکت آزاد و رقص در جشن‌ها را می‌دهد.",
+    descriptionEn: "Vibrant and cheerful traditional dress tailored for young girls up to 12 years with featherlight fabrics and authentic motifs.",
+    includes: ["پیراهن دخترانه پرچین", "شلوار کشی راحت", "چادر کوچک هماهنگ"],
+    includesEn: ["Pleated Girls Dress", "Elastic Comfort Pants", "Matching Chador"]
+  },
+  {
+    id: "jewelry-1",
+    title: "ست زیورآلات نقره‌ای سنتی همراه با مته‌پتی",
+    titleEn: "Afghan Antique Silver Jewelry & Matha-Patti Set",
+    category: "jewelry",
+    priceAfn: 4800,
+    priceUsd: 70,
+    rating: 4.9,
+    reviewsCount: 42,
+    badge: "مکمل گند افغانی",
+    badgeEn: "Best Pairing",
+    image: "/assets/images/logo.jpg",
+    fabric: "آلیاژ ورشو سنتی، نگین‌های لاجورد بدخشان و عقیق",
+    fabricEn: "Traditional white bronze alloy, Badakhshan lapis lazuli stones & carnelian",
+    workmanship: "قلم‌زنی و منجوق‌بافی دست‌ساز کابل",
+    workmanshipEn: "Hand-chiseled metalwork with handcrafted beads",
+    description: "ست کامل زیورآلات سنتی اصیل افغانستان شامل مته‌پتی (زیور پیشانی)، گردنبند طوق سنگین با آویزهای زنگوله‌ای و گوشواره‌های چلچراغی.",
+    descriptionEn: "Complete authentic Afghan traditional jewelry set including headpiece (matha patti), statement chocker necklace and chandelier earrings.",
+    includes: ["مته‌پتی پیشانی", "طوق گردن آویزدار", "یک جفت گوشواره چلچراغی"],
+    includesEn: ["Forehead Matha Patti", "Statement Choker Necklace", "Chandelier Earrings"]
+  }
+];
+
+export const TESTIMONIALS = [
+  {
+    name: "مریم رحیمی",
+    location: "تورنتو، کانادا",
+    text: "لباس گند افغانی که برای عروسی‌ام سفارش داده بودم به موقع رسید. کیفیت مخمل و دوخت آیینه‌دوزی دقیقاً مثل عکس پیج اینستاگرام‌شان فوق‌العاده بود. تشکر از تولیدی نظیف!",
+    rating: 5,
+    product: "گند افغانی زرین شاهی"
+  },
+  {
+    name: "احمد شکیب رسولی",
+    location: "فرانکفورت، آلمان",
+    text: "واسکتی که برای عید سفارش دادم از نظر ظرافت چرمه‌دوزی و دوخت تمیز بی‌نظیر بود. اندازه‌گیری که به صورت آنلاین داده بودم کاملاً فیت درآمده بود.",
+    rating: 5,
+    product: "ست پیرهن تنبان سنتی با واسکت زرین"
+  },
+  {
+    name: "رویا سادات",
+    location: "کابل، افغانستان",
+    text: "سال‌هاست برای تمام جشن‌ها از فروشگاه نظیف خرید می‌کنیم. هم اصالت طرح‌ها حفظ شده و هم نوآوری در دیزاین دارند. موفق باشید.",
+    rating: 5,
+    product: "لباس عروس سنتی زمرد کابل"
+  }
+];
+
