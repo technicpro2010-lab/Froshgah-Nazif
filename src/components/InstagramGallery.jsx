@@ -9,27 +9,27 @@ export default function InstagramGallery() {
 
   const posts = [
     {
-      img: '/assets/images/product_1.jpg',
-      href: storeInfo.instagramUrl,
-      caption: fa ? 'گند افغانی زرین با چرمه‌دوزی کابل' : 'Golden Gand with Kabul Charma embroidery',
+      img: '/assets/images/social_post_01.webp',
+      href: 'https://www.instagram.com/froshgah_nazef/p/DJSQqtsRq5x/',
+      caption: fa ? 'لباس سنتی افغانی از صفحه اینستاگرام' : 'Afghan traditional dress from Instagram',
       likes: '342', comments: '48',
     },
     {
-      img: '/assets/images/logo.jpg',
+      img: '/assets/images/facebook_post_01.webp',
       href: storeInfo.facebookUrl,
-      caption: fa ? 'صفحه رسمی فروشگاه نظیف در فیسبوک' : 'Official Froshgah Nazif Facebook page',
+      caption: fa ? 'مدل سنتی از صفحه فیسبوک فروشگاه نظیف' : 'Traditional design from our Facebook page',
       likes: '198', comments: '26',
     },
     {
-      img: '/assets/images/product_2.jpg',
-      href: storeInfo.instagramUrl,
-      caption: fa ? 'لباس حنابندان و عروس سنتی افغانی' : 'Afghan bridal & henna night dress',
+      img: '/assets/images/facebook_post_02.webp',
+      href: storeInfo.facebookUrl,
+      caption: fa ? 'لباس سنتی گلدوزی‌شده از صفحه فیسبوک' : 'Embroidered traditional dress from Facebook',
       likes: '512', comments: '73',
     },
     {
-      img: '/assets/images/product_3.jpg',
-      href: storeInfo.instagramUrl,
-      caption: fa ? 'دوخت سفارشی برای مشتریان خارج از کشور' : 'Custom orders for diaspora clients worldwide',
+      img: '/assets/images/social_post_09.webp',
+      href: 'https://www.instagram.com/froshgah_nazef/p/DdPVhJ0KIFT/',
+      caption: fa ? 'لباس سنتی زرشکی با گلدوزی' : 'Burgundy traditional dress with embroidery',
       likes: '420', comments: '55',
     },
   ];
