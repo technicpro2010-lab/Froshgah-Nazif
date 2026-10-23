@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStore } from '../context/StoreContext';
 import { Phone, Mail, MapPin, Scissors, Heart } from 'lucide-react';
-import { InstagramIcon } from './Icons';
+import { FacebookIcon, InstagramIcon } from './Icons';
 
 export default function Footer() {
   const { lang, setIsCustomOrderOpen, storeInfo } = useStore();
@@ -41,7 +41,7 @@ export default function Footer() {
             <p className="text-xs leading-relaxed text-gray-400">
               {fa ? storeInfo.bio : storeInfo.bioEn}
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-2">
               <a
                 href={storeInfo.instagramUrl}
                 target="_blank"
@@ -50,6 +50,15 @@ export default function Footer() {
               >
                 <InstagramIcon className="w-3.5 h-3.5" />
                 @{storeInfo.instagramHandle}
+              </a>
+              <a
+                href={storeInfo.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold transition-colors"
+              >
+                <FacebookIcon className="w-3.5 h-3.5" />
+                Facebook
               </a>
               <button
                 onClick={() => setIsCustomOrderOpen(true)}
@@ -99,6 +108,12 @@ export default function Footer() {
                 <InstagramIcon className="w-3.5 h-3.5 text-pink-400 shrink-0" />
                 <a href={storeInfo.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gray-200 transition-colors font-mono">
                   instagram.com/{storeInfo.instagramHandle}
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <FacebookIcon className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                <a href={storeInfo.facebookUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gray-200 transition-colors">
+                  Facebook
                 </a>
               </div>
             </div>

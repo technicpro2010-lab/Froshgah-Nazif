@@ -19,6 +19,19 @@ export function InstagramIcon({ className = "w-4 h-4", ...props }) {
   );
 }
 
+export function FacebookIcon({ className = "w-4 h-4", ...props }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      {...props}
+    >
+      <path d="M13.5 21v-7.3h2.45l.37-2.85H13.5V9.03c0-.83.23-1.4 1.42-1.4h1.51V5.08c-.26-.03-1.16-.11-2.21-.11-2.19 0-3.69 1.34-3.69 3.8v2.08H8.05v2.85h2.48V21h2.97Z" />
+    </svg>
+  );
+}
+
 export function WhatsAppIcon({ className = "w-4 h-4", ...props }) {
   return (
     <svg
@@ -31,4 +44,3 @@ export function WhatsAppIcon({ className = "w-4 h-4", ...props }) {
     </svg>
   );
 }
-

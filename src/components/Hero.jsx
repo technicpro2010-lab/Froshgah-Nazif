@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStore } from '../context/StoreContext';
 import { Scissors, ArrowDown } from 'lucide-react';
-import { InstagramIcon } from './Icons';
+import { FacebookIcon, InstagramIcon } from './Icons';
 
 export default function Hero() {
   const { lang, setIsCustomOrderOpen, storeInfo } = useStore();
@@ -15,15 +15,26 @@ export default function Hero() {
           {/* Text side */}
           <div className="space-y-6">
             {/* Instagram tag */}
-            <a
-              href={storeInfo.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-semibold text-pink-600 hover:text-pink-700 transition-colors"
-            >
-              <InstagramIcon className="w-4 h-4" />
-              <span className="font-mono">@{storeInfo.instagramHandle}</span>
-            </a>
+            <div className="flex flex-wrap items-center gap-4">
+              <a
+                href={storeInfo.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-pink-600 hover:text-pink-700 transition-colors"
+              >
+                <InstagramIcon className="w-4 h-4" />
+                <span className="font-mono">@{storeInfo.instagramHandle}</span>
+              </a>
+              <a
+                href={storeInfo.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-blue-700 hover:text-blue-800 transition-colors"
+              >
+                <FacebookIcon className="w-4 h-4" />
+                <span>{fa ? 'فیسبوک' : 'Facebook'}</span>
+              </a>
+            </div>
 
             {/* Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">

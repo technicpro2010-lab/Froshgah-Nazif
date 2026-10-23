@@ -4,7 +4,7 @@ export const STORE_INFO = {
   subtitle: "بهترین لباس‌های مجلسی گند افغانی، صنایع دستی و لباس محلی",
   subtitleEn: "Afghan Gand Afghani, Handcrafts & Hazaragi Traditional Wear",
   instagramHandle: "froshgah_nazef",
-  instagramUrl: "https://www.instagram.com/froshgah_nazef",
+  instagramUrl: "https://www.instagram.com/froshgah_nazef?rpxt=YXY2emRweG9icmJv",
   facebookUrl: "https://www.facebook.com/share/19CowhpbCn/",
   facebookHandle: "فروشگاه نظیف",
   phone: "+93 78 000 0000",
@@ -46,10 +46,10 @@ export const PRODUCTS = [
     isFeatured: true,
     badge: "پست منتخب اینستاگرام",
     badgeEn: "Instagram Featured",
-    image: "/assets/images/product_featured.jpg",
+    image: "/assets/images/product_1.jpg",
     gallery: [
-      "/assets/images/product_featured.jpg",
-      "/assets/images/logo.jpg"
+      "/assets/images/product_1.jpg",
+      "/assets/images/product_2.jpg"
     ],
     fabric: "مخمل درجه یک زرشکی و حریر ابریشم خالص",
     fabricEn: "Premium Crimson Velvet & Pure Silk Chiffon",
@@ -72,7 +72,7 @@ export const PRODUCTS = [
     isFeatured: true,
     badge: "مخصوص عروس و نامزدی",
     badgeEn: "Bridal Special",
-    image: "/assets/images/product_featured.jpg",
+    image: "/assets/images/product_3.jpg",
     fabric: "مخمل اعلا زمردی تیره همراه با آستر ساتن رویال",
     fabricEn: "Emerald Velvet with Royal Satin Lining",
     workmanship: "گل‌دوزی مروارید، زردوزی دست‌ساز و یراق‌های باستانی",
@@ -93,7 +93,7 @@ export const PRODUCTS = [
     reviewsCount: 19,
     badge: "طرح پرطرفدار",
     badgeEn: "Popular Choice",
-    image: "/assets/images/product_featured.jpg",
+    image: "/assets/images/product_4.jpg",
     fabric: "پارچه دست‌باف سنتی و مخمل درجه یک",
     fabricEn: "Authentic Handwoven Fabric & Premium Velvet",
     workmanship: "سکه‌دوزی دست‌ساز کابل، آیینه‌های دایره‌ای سنتی",
@@ -114,7 +114,7 @@ export const PRODUCTS = [
     reviewsCount: 31,
     badge: "مخصوص آقایان و داماد",
     badgeEn: "Men's Cultural Wear",
-    image: "/assets/images/logo.jpg",
+    image: "/assets/images/product_6.jpg",
     fabric: "کتان اعلا ابریشمی + مخمل ترک برای واسکت",
     fabricEn: "Silk-cotton blend tunban + Turkish velvet vest",
     workmanship: "خامک‌دوزی دست‌ساز روی یقه و سرآستین، زرکوب واسکت",
@@ -135,7 +135,7 @@ export const PRODUCTS = [
     reviewsCount: 16,
     badge: "طراحی ویژه کودکان",
     badgeEn: "Kids Collection",
-    image: "/assets/images/product_featured.jpg",
+    image: "/assets/images/product_8.jpg",
     fabric: "حریر نرم و سبک، بدون ایجاد حساسیت پوست",
     fabricEn: "Ultra-soft hypoallergenic silk chiffon & lightweight velvet",
     workmanship: "سوزن‌دوزی ملایم، زنگوله‌دوزی سبک سنتی",
@@ -156,7 +156,7 @@ export const PRODUCTS = [
     reviewsCount: 42,
     badge: "مکمل گند افغانی",
     badgeEn: "Best Pairing",
-    image: "/assets/images/logo.jpg",
+    image: "/assets/images/product_10.jpg",
     fabric: "آلیاژ ورشو سنتی، نگین‌های لاجورد بدخشان و عقیق",
     fabricEn: "Traditional white bronze alloy, Badakhshan lapis lazuli stones & carnelian",
     workmanship: "قلم‌زنی و منجوق‌بافی دست‌ساز کابل",
@@ -191,4 +191,3 @@ export const TESTIMONIALS = [
     product: "لباس عروس سنتی زمرد کابل"
   }
 ];
-

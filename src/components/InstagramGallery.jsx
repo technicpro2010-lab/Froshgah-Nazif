@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStore } from '../context/StoreContext';
 import { ExternalLink, Heart, MessageCircle } from 'lucide-react';
-import { InstagramIcon } from './Icons';
+import { FacebookIcon, InstagramIcon } from './Icons';
 
 export default function InstagramGallery() {
   const { lang, storeInfo } = useStore();
@@ -9,22 +9,26 @@ export default function InstagramGallery() {
 
   const posts = [
     {
-      img: '/assets/images/product_featured.jpg',
+      img: '/assets/images/product_1.jpg',
+      href: storeInfo.instagramUrl,
       caption: fa ? 'گند افغانی زرین با چرمه‌دوزی کابل' : 'Golden Gand with Kabul Charma embroidery',
       likes: '342', comments: '48',
     },
     {
       img: '/assets/images/logo.jpg',
-      caption: fa ? 'لوگو و نشان رسمی فروشگاه نظیف' : 'Official logo of Froshgah Nazif',
+      href: storeInfo.facebookUrl,
+      caption: fa ? 'صفحه رسمی فروشگاه نظیف در فیسبوک' : 'Official Froshgah Nazif Facebook page',
       likes: '198', comments: '26',
     },
     {
-      img: '/assets/images/product_featured.jpg',
+      img: '/assets/images/product_2.jpg',
+      href: storeInfo.instagramUrl,
       caption: fa ? 'لباس حنابندان و عروس سنتی افغانی' : 'Afghan bridal & henna night dress',
       likes: '512', comments: '73',
     },
     {
-      img: '/assets/images/product_featured.jpg',
+      img: '/assets/images/product_3.jpg',
+      href: storeInfo.instagramUrl,
       caption: fa ? 'دوخت سفارشی برای مشتریان خارج از کشور' : 'Custom orders for diaspora clients worldwide',
       likes: '420', comments: '55',
     },
@@ -47,31 +51,54 @@ export default function InstagramGallery() {
               <h2 className="text-xl font-black text-gray-900">
                 {fa ? storeInfo.name : storeInfo.nameEn}
               </h2>
-              <a
-                href={storeInfo.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-mono text-pink-600 hover:text-pink-700 flex items-center gap-1"
-              >
-                <InstagramIcon className="w-3.5 h-3.5" />
-                @{storeInfo.instagramHandle}
-              </a>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                <a
+                  href={storeInfo.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-mono text-pink-600 hover:text-pink-700 flex items-center gap-1"
+                >
+                  <InstagramIcon className="w-3.5 h-3.5" />
+                  @{storeInfo.instagramHandle}
+                </a>
+                <a
+                  href={storeInfo.facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-blue-700 hover:text-blue-800 flex items-center gap-1"
+                >
+                  <FacebookIcon className="w-3.5 h-3.5" />
+                  Facebook
+                </a>
+              </div>
               <p className="text-xs text-gray-500 mt-0.5">
                 {fa ? 'جدیدترین مدل‌ها و رضایت مشتریان را دنبال کنید' : 'Follow for the latest designs & client reviews'}
               </p>
             </div>
           </div>
 
-          <a
-            href={storeInfo.instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-pink-600 hover:bg-pink-700 text-white text-sm font-bold transition-colors"
-          >
-            <InstagramIcon className="w-4 h-4" />
-            {fa ? 'مشاهده پیج' : 'Visit Page'}
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
+          <div className="flex flex-wrap gap-2">
+            <a
+              href={storeInfo.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-pink-600 hover:bg-pink-700 text-white text-sm font-bold transition-colors"
+            >
+              <InstagramIcon className="w-4 h-4" />
+              {fa ? 'اینستاگرام' : 'Instagram'}
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href={storeInfo.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-white text-sm font-bold transition-colors"
+            >
+              <FacebookIcon className="w-4 h-4" />
+              Facebook
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
         </div>
 
         {/* Posts Grid */}
@@ -79,7 +106,7 @@ export default function InstagramGallery() {
           {posts.map((post, i) => (
             <a
               key={i}
-              href={storeInfo.instagramUrl}
+              href={post.href}
               target="_blank"
               rel="noopener noreferrer"
               className="group block rounded-xl overflow-hidden border border-gray-200 bg-gray-100"
